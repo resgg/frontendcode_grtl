@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview page </title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+   
+body,html{
+ height:100%;
+
+}
+
+h1{
+  text-align: center;
+}
+.card{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition:color 0.2s linear;
+}
+.card-item{
+  height: 650px;
+  width:900px;
+  margin:90px; 
+  background-color:white;
+  border-radius: 15px;
+  height: 650px;
+  
+  background:#f2f2f2;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+p{
+  text-align: center;
+}
+h1{
+  margin-top: 30px;
+}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  margin-top: 80px;
+}
+
+table {
+	
+  border-collapse: collapse;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+}
+
+th,
+td {
+	padding: 15px;
+	color: #fff;
+ 
+}
+
+th 
+{
+	text-align: left;
+}
+
+
+	th 
+  {
+		background-color: #55608f;
+	}
+  table 
+  {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  justify-content: center;
+  margin-top: 30px;
+}
+th
+{
+  text-align: center;
+}
+td, th 
+{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.name{
+  margin-top: -18px;
+}
+h1{
+  margin-top: -10px;
+}
+p{
+  text-align: center;
+  padding-top:1px;
+}
+.term{
+  margin-left: 20px;
+}
+.hai{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.center{
+  height: 100px;
+  width:900px;
+  margin-top: -10px;
+  margin-bottom:10px;
+}
+.card{
+  margin-top:    10px;
+  margin-bottom: 20px;
+  margin-left:   50px;
+  margin-right:  50px;
+}
+.buttons{
+  margin-right:130px;
+  margin-left: 130px;
+  margin-bottom: 30px;
+  margin-top: -30px;
+}
+.button3{
+  float:right;
+  margin-right: 300px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1300px) {
+  .button3 {
+  margin-right:363px;
+  margin-bottom: 10px;
+  }
+}
+.button3{
+  background: #8E2DE2;  
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #24c64f;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  transition: 0.25s;
+  width: 153px;
+  margin:20px;
+}
+.button2{
+  float:left;
+  margin-left: 700px;
+  margin-bottom: 10px;
+}
+.button2:hover
+{
+    box-shadow: 0px 1px 18px violet;
+}
+.button3:hover
+{
+    box-shadow: 0px 1px 18px violet;
+}
+.button2{
+  background: #8E2DE2;  
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #24c64f;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  transition: 0.25s;
+  width: 153px;
+  margin:20px;
+}
+.hi1{
+    background-color: #5687d4bd;
+}
+.hi2{
+    background-color: #3fb47ca1;
+}
+.hi4{
+    background-color:#b69743a9 ;  
+}
+.hi3{
+    background-color: #c94e4e79;  
+}
+.hi11{
+    background-color: #1d488d96;
+
+}
+.hi22{
+    background-color:#0b64397e ;
+}
+.hi44{
+    background-color: #b38a1cbd;
+
+}
+.hi33{
+background-color: #800f0f91;
+}
+h4{
+    color: whitesmoke;
+}
+</style>
+<body>
+          <h1>Preview Section</h1><br>
+               <p class="name" >{{user}}</p>
+             <p class="id" >{{regno}}</p>
+              
+              <form role="form" method="post" >
+               <section class="hai">
+               <div class="card">
+               <table class="center" height="100px" width="1239px" >
+                <tr>
+              <th colspan="2" class="term" style="background-color: #5687d4bd ;">Term 1</th>
+              
+                </tr>
+               <tr>
+                <th style="background-color: #5687d4bd ;">SINO.</th>
+                <th style="background-color: #5687d4bd ;" class="sub">Subjects</th>
+              </tr>
+              <tr>
+                <td style="background-color:#1d488d96">1</td>
+                <td  style="background-color:#1d488d96" id="course1">1</td>
+               </tr>
+              <tr> 
+                <td style="background-color:#1d488d96">2</td>
+                <td style="background-color:#1d488d96" id="course2">1</td>
+              </tr>
+              <tr>
+                <td style="background-color:#1d488d96">3</td>
+                <td style="background-color:#1d488d96" id="course3">3</td>
+                
+              </tr>
+              <tr>
+                <td style="background-color:#1d488d96">4:</td>
+                <td style="background-color:#1d488d96" id="course4">4</td>
+              </tr>
+              <tr>
+                <td style="background-color:#1d488d96"  >5</td>
+                <td style="background-color:#1d488d96" id="course5">5</td>
+                
+              </tr>
+            
+            </table>
+            
+            </div>
+            <div class="card">
+             
+              <table class="center" height="100px" width="1239px" >
+                <tr>
+                  <th colspan="2" style="background-color: #3fb47ca1 ;">Term 2</th>
+                </tr>
+              <tr>
+               
+                <th style="background-color: #3fb47ca1 ;">SINO.</th>
+                <th class="sub" style="background-color: #3fb47ca1 ;">Subjects</th>
+              </tr>
+              <tr>
+                <td  style="background-color: #0b64397e;" >1</td>
+                <td id="course6" style="background-color: #0b64397e;" >1 </td>
+               </tr>
+              <tr> 
+                <td style="background-color: #0b64397e;" >2</td>
+                <td id="course7" style="background-color: #0b64397e;" >1</td>
+              </tr>
+              <tr>
+                <td style="background-color: #0b64397e;" >3</td>
+                <td id="course8" style="background-color: #0b64397e;" >3</td>
+                
+              </tr>
+              <tr>
+                <td style="background-color: #0b64397e;" >4:</td>
+                <td id="course9" style="background-color: #0b64397e;" >4</td>
+              </tr>
+              <tr>
+                <td style="background-color: #0b64397e;" >5</td>
+                <td id="course10" style="background-color: #0b64397e;" >5</td>
+                
+              </tr>
+            
+            </table>
+           
+           </div>
+           <div class="card">
+           
+            <table class="center" height="100px" width="1239px" >
+              <tr>
+                <th style="background-color: #c09a32cb;" colspan="2">Term 3</th>
+              </tr>
+            <tr>
+              <th style="background-color: #c09a32cb;">SINO.</th>
+              <th style="background-color: #c09a32cb;" class="sub">Subjects</th>
+            </tr>
+            <tr>
+              <td style="background-color: #b69743a9;">1</td>
+              <td  style="background-color: #b69743a9;"id="course11">1</td>
+             </tr>
+            <tr> 
+              <td style="background-color: #b69743a9;">2</td>
+              <td  style="background-color: #b69743a9;"id="course12">1</td>
+            </tr>
+            <tr>
+              <td style="background-color: #b69743a9;">3</td>
+              <td  style="background-color: #b69743a9;" id="course13">3</td>
+              
+            </tr>
+            <tr>
+              <td style="background-color: #b69743a9;">4:</td>
+              <td style="background-color: #b69743a9;" id="course14">4</td>
+            </tr>
+            <tr>
+              <td style="background-color: #b69743a9;">5</td>
+              <td  style="background-color: #b69743a9;"id="course15">5</td>
+              
+            </tr>
+          
+          </table>
+         
+         </div>
+         <div class="card">
+        
+          <table class="center" height="100px" width="1239px" >
+            <tr>
+              <th  style="background-color: #a32a2a91"colspan="2" class="term">Term 4</th>
+            </tr>
+          <tr>
+            <th style="background-color:#a32a2a91 ">SINO.</th>
+            <th  style="background-color: #a32a2a91"class="sub">Subjects</th>
+          </tr>
+          <tr>
+            <td style="background-color: #c94e4e79">1</td>
+            <td  style="background-color: #c94e4e79" id="course16">1</td>
+           </tr>
+          <tr> 
+            <td style="background-color: #c94e4e79" >2</td>
+            <td style="background-color: #c94e4e79" id="course17">1</td>
+          </tr>
+          <tr>
+            <td style="background-color: #c94e4e79">3</td>
+            <td style="background-color: #c94e4e79" id="course18">3</td>
+            
+          </tr>
+          <tr>
+            <td style="background-color: #c94e4e79">4:</td>
+            <td style="background-color: #c94e4e79"id="course19">4</td>
+          </tr>
+          <tr>
+            <td style="background-color: #c94e4e79">5</td>
+            <td style="background-color: #c94e4e79" id="course20">5</td>
+            
+          </tr>
+        
+        </table>
+       
+       </div>
+           </div>
+                   </div>
+    </section>
+              </form>
+
+    <div class="buttons">
+      <button class="button2" id="backbtn" onclick="history.back()">Back</button>
+       <button class="button3" id="submit" onclick="submitdata()" >Submit</button>
+     </div>
+     
+     <script type="text/javascript" "  src="{{ url_for('static', filename='script.js') }}" > </script>
+
+
+     </script>
+     
+     
+</body>
+</html>
