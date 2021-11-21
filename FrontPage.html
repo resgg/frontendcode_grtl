@@ -62,7 +62,7 @@
   font-family: "Raleway SemiBold", sans-serif;
   height: 42.3px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 150px;
   transition: 0.25s;
   width: 153px;
   margin:20px;
@@ -84,7 +84,7 @@
     margin-left:300px;
 }
   .bottom{
-   margin-top:90px;
+   margin-top:400px;
    margin-left:85%;
    font-size: 20%;
   }
@@ -117,6 +117,16 @@ background-color: #dab7b0;
 h4{
     color: whitesmoke;
 }
+.fixed{
+position: fixed;
+}
+.whole {
+      height: 1000px;
+    }
+    .whole thead th {
+      position: sticky;
+      top: 0;
+    }
 </style>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -125,11 +135,12 @@ h4{
         <script type="text/javascript"  src="{{ url_for('static', filename='script.js') }}" > </script>
         <form  action="/preview" method="GET">
         <div class="top">
-            <p class="name" id="studentname">Name:Reshma</p>
-             <p class="id" id="studentid">Student-ID:989746</p>
+            <p class="name" id="studentname">{{user}}</p>
+             <p class="id" id="studentid">{{regno}}</p>
         </div>
      <div class="whole">
        <table>
+       <thead> 
        <tr>
         <th>term</th>
         <th>SINO</th>
@@ -140,6 +151,7 @@ h4{
         <th>OB-HR-STRATEGY</th>
         
       </tr>
+    </thead> 
       <div class="hi11" name="TERM-1">
       <tr class="hi1">
         
@@ -196,7 +208,7 @@ h4{
             value="t1-IT Consulting - Sriram Rajagopalan"
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="11"></span>
     </td>
-        <td>xxxxxxxxxxx</td>
+        <td>------------</td>
       </tr>
       <tr class="hi1">
         <td>3</td>
@@ -220,20 +232,20 @@ h4{
             name="Data Visualization & BI - Vivekanand CAP 150 FCFS" 
             value="t1-Data Visualization & BI - Vivekanand CAP 150 FCFS"
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="11"></span></td>
-        <td>xxxxxxxxxx</td>
+        <td>------------</td>
         
       </tr>
        <tr class="hi1">
         <td>4</td>
-        <td>xxxxxxxxxx</td>
+        <td>------------</td>
         <td>Marketing Metrics - D Sriram
             <input type="checkbox" id="t1-41" class="term1"
             name="Marketing Metrics - D Sriram" 
             value="t1-Marketing Metrics - D Sriram"
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="11"></span></td>
-        <td>xxxxxxxxxx</td>
-        <td>xxxxxxxxxx</td>
-        <td>xxxxxxxxxx</td>
+        <td>------------</td>
+        <td>------------</td>
+        <td>------------</td>
         
       </tr>
       </div>
@@ -326,12 +338,12 @@ h4{
             value="t2-Strategic Operations Planning - Natarajan"
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span>
     </td>
-        <td>xxxxxxxxxxx</td>
+        <td>------------</td>
         
       </tr>
        <tr class="hi2">
         <td>4</td>
-        <td>xxxxxxxxxxxx</td>
+        <td>------------</td>
         <td>Consumer Behaviour - Suresh Ramanathan
             <input type="checkbox" id="t2-41" class="term2"
             name="Consumer Behaviour - Suresh Ramanathan" 
@@ -347,7 +359,7 @@ h4{
             name="Production Planning & Control - Chandra Prakash" 
             value="t2-Production Planning & Control - Chandra Prakash"
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span></td>
-        <td>xxxxxxxxxxx</td>
+        <td>------------</td>
         
       </tr>
       
@@ -366,9 +378,9 @@ h4{
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span></td>
             
 
-        <td>xxxxxxxxxxxx></td>
-        <td>xxxxxxxxxxxx</td>
-        <td>xxxxxxxxxxxx</td>
+        <td>------------</td>
+        <td>------------</td>
+        <td>------------</td>
         
       </tr>
       </div>  
@@ -433,7 +445,7 @@ h4{
             name="Supply Chain Optimization -" 
             value="t3-Supply Chain Optimization -"
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span></td>
-        <td>xxxxxxxxxx</td>
+        <td>------------</td>
         
       </tr>
       <tr class="hi3">
@@ -461,7 +473,7 @@ h4{
             name="Business Enterprise for Performance Excellence - Rama Shankar" 
             value="t3-Business Enterprise for Performance Excellence - Rama Shankar"
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span></td>
-        <td>xxxxxxxxxxx</td>
+        <td>------------</td>
         
       </tr>
        <tr class="hi3">
@@ -472,14 +484,14 @@ h4{
             value="t3-Channels and Pricing Decisions - Trichy Krishnan"
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span>
     </td>
-        <td>xxxxxxxxxx</td>
+        <td>------------</td>
         <td>Web & Social Media Analytics - Sowmya Vivek
             <input type="checkbox" id="t3-34" class="term3"
             name="Web & Social Media Analytics - Sowmya Vivek" 
             value="t3-Web & Social Media Analytics - Sowmya Vivek"
             onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span></td>
-        <td>xxxxxxxxxx</td>
-        <td>xxxxxxxxxx</td>
+        <td>------------</td>
+        <td>------------</td>
         
       </tr>
       </div>
@@ -543,7 +555,7 @@ h4{
               name="Service Operations Management - Chandra Prakash" 
               value="t4-Service Operations Management - Chandra Prakash"
               onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span></td>
-          <td>xxxxxxxxx</td>
+          <td>------------</td>
           
         </tr>
         <tr class="hi4">
@@ -571,7 +583,7 @@ h4{
               name="Sustainable Operations -" 
               value="t4-Sustainable Operations -"
               onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span></td>
-          <td>xxxxxxxxxxx</td>
+          <td>------------</td>
           
         </tr>
          <tr class="hi4">
@@ -581,10 +593,10 @@ h4{
               name="Applied Behavioural Economics - Vidya Mahambare" 
               value="t4-Applied Behavioural Economics - Vidya Mahambare"
               onclick="disable(this)"><span style="color:red ; font-size: small ; text-align: left;" id="same"></span></td>
-          <td>xxxxxxxxxxx</td>
-          <td>xxxxxxxxxxx</td>
-          <td>xxxxxxxxxxx</td>
-          <td>xxxxxxxxxxx</td>
+          <td>------------</td>
+          <td>------------</td>
+          <td>------------</td>
+          <td>------------</td>
           
         </tr>
     </div>
